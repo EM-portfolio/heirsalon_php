@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
         <p> スタイリスト: ${info.event.title}<br><span id="user_info" >${info.event.extendedProps.description}</span> </p>
       `;
     },
-    googleCalendarApiKey: 'AIzaSyC4KW8_z8igZc1SnMoL7dPXP3SEEme7fZ0',
+    googleCalendarApiKey: '*******',
     events: {
-      googleCalendarId: '4bf5d6988266f2863cad011f45143ba28089a7f5b991b7f35f0da9c89721b0dc@group.calendar.google.com'
+      googleCalendarId: '*******'
     }
   });
   
@@ -77,9 +77,9 @@ document.getElementById('reloadButton').addEventListener('click', function() {
         <p> スタイリスト: ${info.event.title}<br><span id="user_info">${info.event.extendedProps.description}</span> </p>
       `;
     },
-    googleCalendarApiKey: 'AIzaSyC4KW8_z8igZc1SnMoL7dPXP3SEEme7fZ0',
+    googleCalendarApiKey: '*******',
     events: {
-      googleCalendarId: '4bf5d6988266f2863cad011f45143ba28089a7f5b991b7f35f0da9c89721b0dc@group.calendar.google.com'
+      googleCalendarId: '*******'
     }
   });
   
