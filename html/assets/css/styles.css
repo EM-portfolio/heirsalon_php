@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  box-sizing: border-box; 
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #fdf8f4; 
+  color: #333;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+header {
+  background-color: #8699b0; 
+  color: #eee;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+input[type="submit"],
+button {
+  color: #fff;
+  background-color: #88b6ab; 
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button,
+#userCardChange {
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+#userCardChange {
+  height: 50px;
+}
+input[type="submit"]:hover {
+  background-color: #a7baca;
+}
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: px;
+  border: 1px solid #dcdfe3;
+  border-radius: 6px;
+  background-color: #fdfdff; 
+  box-sizing: border-box;
+  color: #5a5a5a;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border: none;
+}
+select[readonly]{
+    pointer-events:none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #e1e2de;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  flex-grow: 1;
+  width: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li:first-child {
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #5f6368;
+  background-color: #a7baca; 
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #ece5d4; 
+}
+
+.active-list {
+  background-color: #ece5d4;
+}
+
+
+.card-header {
+  background-color: #e1e2de; 
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+section.dashbord h3,
+section.users h3,
+section.schedule h3 {
+  margin: 0;
+}
+
+.section {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+/* 情報ボックススタイル */
+.info {
+  background-color: #fffbf0;
+  border: 1px solid #ebcba4;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #8c6a53;
+}
+
+.userbox {
+width: 80%;
+height: 250px;
+overflow: scroll;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#adminCalendar{
+  height: 500px;
+
+}
+.fc .fc-button-primary:disabled {
+  
+  background-color: #aae0d4;
+  border: none;
+}
+.fc .fc-button-primary:disabled:hover {
+  background-color: #aae0d4;
+  border: 1px solid #88b6ab;
+}
+.fc .fc-button-primary {
+  background-color: #88b6ab;
+  border:none;
+}
+.fc .fc-button-primary:hover {
+  background-color: #88b6ab;
+}
+.fc button {
+  width: 80px;
+}
+
+.fc-event a {
+  pointer-events: none;
+}
+
+
+/* 情報ボックススタイル */
+.info {
+  background-color: #fffbf0;
+  border: 1px solid #e1e2de;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.fc-event-main {
+  background-color: #88b6ab;
+  border: 3px solid #88b6ab;
+}
+#adminCalendar > div.fc-view-harness.fc-view-harness-active a{
+  border: none;
+}
+table {
+  width: 100%;
+  margin: auto;
+}
+table.reservation tr {
+  padding: 20px;
+}
+table.reservation tr:hover,
+.userRservationList tr:hover {
+  background-color: #e1e2de;
+}
+table.reservation th {
+  border-bottom: 1px solid #e1e2de;
+
+}
+.no-cansel {
+  text-align: center;
+}
+table.reservation td {
+  padding: 5px 0 5px 25px; 
+}
+table.reservation tr {
+  padding-left: 30px;
+}
+table.reservation tr:hover {
+  background-color: #e1e2de;
+}
+
+#keyword {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 73%;
+}
+#searchBtn {
+  padding: 13px;
+  width: 65px;
+  margin-left: 10px;
+}
+#userCard {
+  margin: 20px;
+}
+.box {
+  margin: 20px;
+}
+#reservationChangeForm {
+  margin: 20px;
+}
+#reservationChangeForm > * {
+  margin: 10px;
+}
+
+.canselbtn,
+.rsvbtn {
+  width: 48%;
+  height: 50px;
+}

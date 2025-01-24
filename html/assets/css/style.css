@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box; 
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #f2f4f7; /* 落ち着いた背景色に変更 */
+  color: rgb(77, 77, 77); 
+  font-family: Arial, sans-serif;
+}
+span {
+  color: red;
+}
+/* カスタムフォント */
+.edu-au-vic-wa-nt-guides {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-weight: 400; 
+}
+/* Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-link {
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-link:hover {
+  color: #0070f3; 
+}
+
+/* スクロール時のアニメーション効果 */
+.sticky-header.scrolled {
+  background-color: #222;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ファーストビュー */
+.mobile-img,
+.desktop-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+/* デスクトップ画像非表示 */
+.desktop-img {
+  display: none;
+}
+
+/* ナビゲーション */
+nav {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+/* ホバー時とアクティブ時のスタイル */
+.nav-list li:hover, .nav-list .color-on {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+/* コンテンツ全体 */
+.content-on {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.content-on:hover {
+  transform: translateY(-4px); /* ホバー時に少し浮かせる */
+}
+
+.content-on h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: rgb(97, 96, 96);
+}
+
+.content-on p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* メニューリスト */
+.content-on ul {
+  padding-left: 20px;
+}
+
+.content-on li {
+  margin: 8px 0;
+  font-size: 17px;
+  color: rgb(97, 96, 96);
+}
+
+
+
+/* 共通幅と中央揃え */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto; /* 中央揃え */
+}
+
+/* ナビゲーション */
+nav.container {
+  margin-bottom: 20px;
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+nav.form{
+  margin-bottom: 0;
+}
+/* コンテンツ */
+.content-on.container {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s;
+}
+
+/* loginpage */
+.loginform {
+  margin-top: 40px;
+}
+.loginform ul{
+  padding-left: 0;
+}
+/* タブのスタイル */
+.form-ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid #ddd;
+  box-sizing: border-box;
+  width: 100%; /* 幅を100%に指定 */
+}
+
+.form-li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  box-sizing: border-box; /* ボーダーを含めた幅調整 */
+}
+
+.form-li.active-tab {
+  background-color: #c3dfff;
+  font-weight: bold;
+}
+
+/* コンテンツの幅調整 */
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 100%; /* フォームの幅を100%に指定 */
+  box-sizing: border-box; /* ボーダーを含めた幅調整 */
+}
+
+.tab-content.active-content {
+  display: block;
+}
+
+
+/* フォームのコンテナのスタイル */
+.content-on.loginform{
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+input[type="email"],
+input[type="password"],
+input[type="submit"]{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+}
+input[type="submit"]{
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  background-color: #8fc5ff; 
+}
+
+
+.form-ul {
+  list-style: none; 
+  padding: 0;
+}
+.form-li {
+  cursor: pointer; 
+  padding: 10px 15px; 
+  display: inline-block; 
+}
+
+.form-li.active-tab {
+  background-color: #8fc5ff; 
+  color: white; 
+}
+.admin.form-li.active-tab {
+  background-color: #ffc58f; 
+  color: white; 
+}
+
+/* タブのコンテンツのスタイル */
+.tab-content {
+  display: none; 
+}
+
+.tab-content.active-content {
+  display: block;
+}
+
+/* メディアクエリ：デスクトップ */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+  }
+
+  .content-on {
+    padding: 40px;
+    max-width: 1000px;
+  }
+
+  nav {
+    padding: 20px 0;
+  }
+
+  .nav-list li {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+}

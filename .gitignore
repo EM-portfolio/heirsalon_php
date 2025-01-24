@@ -1,0 +1,2 @@
+# Ignore the mysql.sock file
+mysql/mysql.sock
