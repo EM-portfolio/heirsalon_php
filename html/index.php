@@ -1,13 +1,15 @@
 <?php
 // Google Clientの初期設定
 require_once 'vendor/autoload.php';
-use Google\Client;
-use Google\Service\Calendar;
 
-$client = new Client();
-$client->setAuthConfig('/var/www/html/credentials.json');
-$client->setScopes(Calendar::CALENDAR_EVENTS);
-$client->setRedirectUri('http://localhost:8080');
+// APIをoffにしているため以下コメントアウトしてます。
+// use Google\Client;
+// use Google\Service\Calendar;
+
+// $client = new Client();
+// $client->setAuthConfig('/var/www/html/credentials.json');
+// $client->setScopes(Calendar::CALENDAR_EVENTS);
+// $client->setRedirectUri('http://localhost:8080');
 
 // トークンを保存するパス
 $tokenPath = '/var/www/html/token.json';
